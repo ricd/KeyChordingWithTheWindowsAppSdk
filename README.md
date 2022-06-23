@@ -12,7 +12,7 @@ and Windows keys via the KeyModifiers property of the PointerRoutedEventArgs.
 This repo contains a small chunk of reusable C# code, User32KeyboardHelper that extends
 these build-in capabilities by allowing you to get the state of any key at any time.
 
-#H2The bits and pieces:
+## The bits and pieces:
 
 In the Win32 world, the USE32.dll contains two functions that provide direct keyboard access:
 •	GetKeyState(int nVirtKey) returns the state of the single specified key.
