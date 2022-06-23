@@ -32,6 +32,5 @@ multiple keys.
 ## The Sample Application
 
 To tryout keyboard chording, press A and S and then either B, to turn the window background blue,
-or R to turn it red.
-
-Tryout mouse chording by first pressing one or more keyboard keys and then one of your mouse button.
+or R to turn it red.  Tryout mouse chording by first pressing one or more keyboard keys and then 
+one of your mouse button.
