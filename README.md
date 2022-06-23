@@ -1,7 +1,7 @@
 # Key-Chording with the Windows App SDK
 Key-chording, simultaneously pressing multiple keys to create a UI gesture, has been a part of the Windows UI language since the early days. It is a powerful way to pack a load of functionality into a sparse UI. 
 
-The Windows App SDK supports limited chording with both keyboard and pointer events.  When a keyboard key is pressed or released you also have direct access to the state of the Menu key (KeyRoutedEventArgs.KeyStatus.IsMenuKeyDown).  When a pointer is pressed or released you can also get the state of the Control, Menu, Shift and Windows keys via the KeyModifiers property of the PointerRoutedEventArgs.
+The Windows App SDK supports limited chording with both keyboard and pointer events.  When a keyboard key is pressed or released you also have direct access to the state of the Menu key (KeyRoutedEventArgs.KeyStatus.IsMenuKeyDown).  When a pointer is pressed or released you also get the state of the Control, Menu, Shift and Windows keys via the KeyModifiers property of the PointerRoutedEventArgs.
 
 This repo contains a small chunk of reusable C# code, User32KeyboardHelper that extends these build-in capabilities by allowing you to get the state of any key at any time.
 
