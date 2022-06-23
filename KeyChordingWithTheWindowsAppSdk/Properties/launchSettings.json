@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "KeyChordingWithTheWindowsAppSdk (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "KeyChordingWithTheWindowsAppSdk (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
