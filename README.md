@@ -6,11 +6,13 @@ a load of functionality into a sparse UI.
 The Windows App SDK supports limited chording with both keyboard and pointer events.  
 When a keyboard key is pressed or released you also have direct access to the state 
 of the Menu key (KeyRoutedEventArgs.KeyStatus.IsMenuKeyDown).  When a pointer is 
-pressed or released you also have access to the state of the Control, Menu, Shift 
+pressed or released you can also get the state of the Control, Menu, Shift 
 and Windows keys via the KeyModifiers property of the PointerRoutedEventArgs.
 
-This repo contains small chunk of reusable C# code, User32KeyboardHelper that allows 
-you to get the state of any keyboard key at any time.
+This repo contains a small chunk of reusable C# code, User32KeyboardHelper that extends
+these build-in capabilities by allowing you to get the state of any key at any time.
+
+#H2The bits and pieces:
 
 In the Win32 world, the USE32.dll contains two functions that provide direct keyboard access:
 •	GetKeyState(int nVirtKey) returns the state of the single specified key.
