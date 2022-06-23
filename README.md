@@ -9,8 +9,8 @@ This repo contains a small chunk of reusable C# code, `User32KeyboardHelper` tha
 
 In the Win32 world, the __USER32.dll__ contains two functions that provide direct keyboard access:
 
-•	`GetKeyState(int nVirtKey)` returns the state of the single specified key.
-•	`GetKeyboardState([out] lpKeyState)` returns a byte array describing the state of every key.
+*	`GetKeyState(int nVirtKey)` returns the state of the single specified key.
+*	`GetKeyboardState([out] lpKeyState)` returns a byte array describing the state of every key.
 
 The `VirtualKey` enumeration exists in the Windows App SDK (WinRT) world.  It defines unique integer values for the commonly used keyboard, mouse, and gamepad keys.  Cast it to an `int`, and a `VirtualKey` value exactly maps to the int needed for `GetKeyState`. And that `int` can also be used as an index into the array of key state values returned by `GetKeyboardState`.
 
