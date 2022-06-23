@@ -23,4 +23,15 @@ integer values for the commonly used keyboard, mouse, and gamepad keys.  Cast it
 and a VirtualKey value exactly maps to the int needed for GetKeyState. And that int can also 
 be used as an index into the array of key state values returned by GetKeyboardState.
 
-User32KeyboardHelper wraps GetKeyState and GetKeyboardState
+## Implementation
+
+User32KeyboardHelper wraps GetKeyState and GetKeyboardState in methods that accept (GetKeyState)
+or return (GetKeyboardState) VirtualKey values. It also provides convienece functions for chording 
+multiple keys.
+
+## The Sample Application
+
+To tryout keyboard chording, press A and S and then either B, to turn the window background blue,
+or R to turn it red.
+
+Tryout mouse chording by first pressing one or more keyboard keys and then one of your mouse button.
